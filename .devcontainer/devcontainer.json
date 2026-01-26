@@ -1,0 +1,16 @@
+{
+    "name": "Anaconda Jupyter Env",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "forwardPorts": [8888],
+    "postCreateCommand": "conda init bash && conda init zsh"
+}
